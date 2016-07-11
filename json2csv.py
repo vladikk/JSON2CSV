@@ -41,7 +41,7 @@ def to_keyvalue_pairs(source, ancestors=[], key_delimeter='_'):
 
 def dicts_to_csv(source, output_file):
     def build_row(dict_obj, keys):
-        return [dict_obj.get(k) for k in keys]
+        return [dict_obj.get(k, "") for k in keys]
     keys = sorted(set(chain.from_iterable([o.keys() for o in source])))
     rows = [build_row(d, keys) for d in source]
 
