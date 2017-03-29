@@ -5,7 +5,7 @@ JSON2CSV is a Apache2 Licensed python based utility that converts json data to a
 ## Getting Started
 
 ```
-python json2csv.py "input_file.json" "output_file.csv"
+json2csv input_file.json output_file.csv
 ```
 
 If you pass in the following json file:
