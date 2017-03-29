@@ -1,6 +1,6 @@
 import unittest
 from io import StringIO
-from json2csv import to_keyvalue_pairs, dicts_to_csv
+from json2csv.api import to_keyvalue_pairs, dicts_to_csv
 
 class JSON2CSVTests(unittest.TestCase):
     def test_to_keyvalue_pairs_if_parameter_is_a_string_then_a_value_pair_is_built(self):

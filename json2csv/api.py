@@ -12,7 +12,7 @@ def json_to_csv(input_file_path, output_file_path):
     with open(input_file_path) as input_file:
         json = input_file.read()
     dicts = json_to_dicts(json)    
-    with open(output_file_path, "wb") as output_file:
+    with open(output_file_path, "w") as output_file:
         dicts_to_csv(dicts, output_file)
 
 def json_to_dicts(json_str):
@@ -45,20 +45,10 @@ def dicts_to_csv(source, output_file):
     cw = csv.writer(output_file)
     cw.writerow(keys)
     for row in rows:
-        cw.writerow([c if isinstance(c, str) or isinstance(c, unicode) else c for c in row])
+        cw.writerow([c if isinstance(c, string_types) else c for c in row])
 
 def write_csv(headers, rows, file):
     cw = csv.writer(file)
     cw.writerow(headers)
     for row in rows:
         cw.writerow([c.encode('utf-8') if isinstance(c, str) or isinstance(c, unicode) else c for c in row])
-
-if __name__ == '__main__':
-    args = sys.argv
-    if len(args) == 3:
-        json_to_csv(args[1], args[2])
-        print('Finished')
-    else:
-        print('Usage:')
-        print('python json2csv.py "{JSON_FILE_PATH}" "{OUTPUT_FILE_PATH}"')
-
