@@ -16,7 +16,11 @@ def json_to_csv(input_file_path, output_file_path):
         dicts_to_csv(dicts, output_file)
 
 def json_to_dicts(json_str):
-    objects = json.loads(json_str)
+    try:
+      objects = json.loads(json_str)
+    except json.decoder.JSONDecodeError:
+      objects = [json.loads(l) for l in json_str.split('\n') if l.strip()]
+
     return [dict(to_keyvalue_pairs(obj)) for obj in objects]
 
 def to_keyvalue_pairs(source, ancestors=[], key_delimeter='_'):
