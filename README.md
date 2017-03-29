@@ -52,14 +52,9 @@ pip install git+https://github.com/vladikk/JSON2CSV
 
 runtests.sh
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-
 ## Authors
 
-* **Vladik Khononov** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Vladik Khononov** - *Initial work* - [vladikk](https://github.com/vladikk)
 
 See also the list of [contributors](https://github.com/vladikk/JSON2CSV/contributors) who participated in this project.
 
