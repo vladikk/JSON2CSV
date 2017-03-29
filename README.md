@@ -1,4 +1,4 @@
-# JSON2CSV 
+# JSON2CSV v2.0
 
 JSON2CSV is a Apache2 Licensed python based utility that converts json data to a csv file.
 
