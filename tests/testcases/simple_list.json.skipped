@@ -1,0 +1,4 @@
+{ "id": 1, "firstName": "Sarah", "lastName": "Connor" }
+{ "id": 2, "firstName": "John", "lastName": "Connor" }
+{ "id": 3, "model": "T800" }
+{ "id": 4, "model": "T1000" }

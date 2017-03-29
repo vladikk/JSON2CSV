@@ -1,0 +1,4 @@
+[{ "id": 1, "name": { "first": "Sarah", "last": "Connor" }, "portrayedBy": ["Linda Hamilton", "Lena Headey", "Emilia Clarke"]},
+ { "id": 2, "name": { "first": "John", "last": "Connor" }, "portrayedBy": ["Edward Furlong", "Dalton Abbot", "Michael Edwards", "Nick Stahl", "Christian Bale", "Jason Clarke"]},
+ { "id": 3, "model": "T800", "portrayedBy": ["Arnold Schwarzenegger", "Roland Kickinger"] },
+ { "id": 4, "model": "T1000", "portrayedBy": ["Robert Patrick"] }]
